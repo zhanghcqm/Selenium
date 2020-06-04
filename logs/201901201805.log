@@ -1,0 +1,9 @@
+2019-01-20 18:05:40,977 - BasePage - INFO - wait for 5 seconds.
+2019-01-20 18:05:41,127 - BasePage - INFO - Had type ' selenium ' in inputBox
+2019-01-20 18:05:41,238 - BasePage - INFO - The element '' was clicked.
+2019-01-20 18:05:41,239 - cloud_page - INFO - show results!
+2019-01-20 18:05:43,239 - BasePage - INFO - Sleep for 2 seconds
+2019-01-20 18:05:45,579 - BasePage - INFO - Had take screenshot and save to folder : /screenshots
+2019-01-20 18:05:52,691 - BasePage - INFO - wait for 10 seconds.
+2019-01-20 18:05:53,793 - BasePage - INFO - The element '' was clicked.
+2019-01-20 18:05:55,246 - BasePage - INFO - Had take screenshot and save to folder : /screenshots
