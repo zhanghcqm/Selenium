@@ -3,7 +3,7 @@
 #@Time   :2019/1/10 09:38
 #@Author :zkf8381
 
-import time
+import time,pymysql
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.select import Select
@@ -141,6 +141,24 @@ class BasePage(object):
         except Exception as e:
             logger.error("Failed to click move_element with %s" % e)
             self.get_windows_img()
+
+    def db_connect(self,sql):
+        """
+        连接数据库
+        :param sql:
+        :return:
+        """
+        db = pymysql.connect("192.168.6.48","root","123456","test")
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            db.commit()
+            data = cursor.fetchone()
+        except:
+            db.rollback()
+        db.close()
+
+        return data
 
         # 强制等待
     @staticmethod
