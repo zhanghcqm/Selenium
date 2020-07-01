@@ -24,7 +24,7 @@ class Logger(object):
         log_path = os.path.dirname(os.path.abspath('.')) + 'Selenium/logs/'
         log_name = log_path + rq + '.log'
 
-        fh = logging.FileHandler(log_name，encoding='utf-8')
+        fh = logging.FileHandler(log_name, encoding='utf-8')
         fh.setLevel(logging.INFO)
 
         # 再创建一个handler，用于输出到控制台
